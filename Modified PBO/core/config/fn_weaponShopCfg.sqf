@@ -223,8 +223,6 @@ switch(_shop) do
 			{
 				["Altis Colonel Officer Shop",
 					[						
-                                         ["srifle_GM6_SOS_F",nil,20000],
-                                         ["5Rnd_127x108_APDS_Mag",nil,250],
 						["arifle_MXC_F",nil,20000],
 						["30Rnd_65x39_caseless_mag",nil,100],
 						["arifle_MX_F",nil,25000],
@@ -266,6 +264,8 @@ switch(_shop) do
 						["arifle_MX_GL_ACO_pointer_F","MX GL",35000],
 						["30Rnd_65x39_caseless_mag",nil,100],
 						["1Rnd_HE_Grenade_shell",nil,250],
+                                         ["srifle_GM6_SOS_F",nil,20000],
+                                         ["5Rnd_127x108_APDS_Mag",nil,250],
 						["srifle_LRR_F","408 Intervention",40000],
 						["7Rnd_408_Mag",nil,500], 				
 						["LMG_Mk200_F","MK200",35000],
