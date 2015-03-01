@@ -253,6 +253,7 @@ class Life_Client_Core
 		class stripDownPlayer {};
 		class fatigueReset {}; 
 		class autoSave {};
+		class fadeSound {};
 	};
 	
 	class Network
