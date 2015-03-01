@@ -360,7 +360,7 @@ switch (_code) do
     //Shift+P = Faded Sound
     case 25:
     {
-        if(_shift) then
+        if (_shift) then
         {
             [] call life_fnc_fadeSound;
             _handled = true;
