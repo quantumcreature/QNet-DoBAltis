@@ -81,7 +81,6 @@ life_action_in_use = false;
 life_action_gather = false;
 life_thirst = 150;
 life_hunger = 150;
-life_fadeSound = false;
 life_smartphoneTarget = ObjNull;
 __CONST__(life_paycheck_period,5); //Five minutes
 life_cash = 0;
