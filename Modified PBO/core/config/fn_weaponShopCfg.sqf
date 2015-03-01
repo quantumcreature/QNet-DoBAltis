@@ -223,6 +223,8 @@ switch(_shop) do
 			{
 				["Altis Colonel Officer Shop",
 					[						
+                                         ["srifle_GM6_SOS_F",nil,20000],
+                                         ["5Rnd_127x108_APDS_Mag",nil,250],
 						["arifle_MXC_F",nil,20000],
 						["30Rnd_65x39_caseless_mag",nil,100],
 						["arifle_MX_F",nil,25000],
