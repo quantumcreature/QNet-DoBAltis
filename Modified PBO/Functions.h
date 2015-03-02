@@ -76,6 +76,7 @@ class Life_Client_Core
 	class Actions
 	{
 		file = "core\actions";
+		class civRestrainAction {};
 		class buyLicense {};
 		class healHospital {};
 		class pushVehicle {};
@@ -249,6 +250,8 @@ class Life_Client_Core
 		class removeLicenses {};
 		class demoChargeTimer {};
 		class civLoadout {};
+		class civInteractionMenu {};
+        class civRestrain {};
 	};
 	
 	class Vehicle
@@ -265,6 +268,8 @@ class Life_Client_Core
 		class vehicleWeight {};
 		class deviceMine {};
 		class addVehicle2Chain {};
+		class civVInteractionMenu {};
+        class medVInteractionMenu {};
 	};
 	
 	class Cop
@@ -348,6 +353,7 @@ class Life_Client_Core
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
+		class pLockpick {};
 	};
 	
 	class Dialog_Controls

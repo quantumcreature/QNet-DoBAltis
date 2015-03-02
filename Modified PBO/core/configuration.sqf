@@ -7,6 +7,8 @@
 ****** Backend Variables *****
 *****************************
 */
+life_handcuffs = ObjNull
+life_handcuffkeys = ObjNull
 life_query_time = time;
 life_action_delay = time;
 life_trunk_vehicle = Objnull;
@@ -157,7 +159,9 @@ life_inv_items =
 	"life_inv_boltcutter",
 	"life_inv_defusekit",
 	"life_inv_storagesmall",
-	"life_inv_storagebig"
+	"life_inv_storagebig",
+	"life_inv_handcuffs",
+	"life_inv_handcuffkeys"
 ];
 
 //Setup variable inv vars.
@@ -195,7 +199,7 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500]];
+life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500],["handcuffs",200],["handcuffkeys",100]];
 
 
 /*
@@ -237,6 +241,8 @@ sell_array =
 	["spikeStrip",1200],
 	["cement",1950],
 	["goldbar",95000]
+	["handcuffs",200],
+	["handcuffkeys",100]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -267,6 +273,8 @@ buy_array =
 	["defusekit",2500],
 	["storagesmall",75000],
 	["storagebig",150000]
+	["handcuffs",500],
+	["handcuffkeys",300]
 ];
 __CONST__(buy_array,buy_array);
 
