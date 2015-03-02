@@ -67,11 +67,11 @@ if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse 
 life_action_inUse = false;
 
 _dice = random(100);
-	if(_dice < 30) then {
-		titleText["You now have keys to this vehicle.","PLAIN"];
-		_curTarget say3D "caralarm";
-		life_vehicles set[count life_vehicles,_curTarget];
-		[[getPlayerUID player,name player,"487"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+if(_dice < 30) then 
+{
+	titleText[localize "STR_ISTR_Lock_Success","PLAIN"];
+	life_vehicles pushBack _vehicle;
+	[[getPlayerUID player,profileName,"487"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 } else {
 	[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
