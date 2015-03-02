@@ -9,7 +9,7 @@
     <meta http-equiv="Content-Language" content="en">
     
     
-    <title>Altis-Life/fn_observe.sqf at master · TAWTonic/Altis-Life · GitHub</title>
+    <title>Altis-Life/endoftheline.sqf at master · TAWTonic/Altis-Life · GitHub</title>
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
     <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
@@ -32,7 +32,7 @@
     <meta name="selected-link" value="repo_source" data-pjax-transient>
       <meta name="google-analytics" content="UA-3769691-2">
 
-    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="183EAC31:12AB:25863062:54F036BF" name="octolytics-dimension-request_id" />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="183EAC31:11B4:9E3F7BE:54F03671" name="octolytics-dimension-request_id" />
     
     <meta content="Rails, view, blob#show" name="analytics-event" />
 
@@ -41,7 +41,7 @@
 
 
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="rTCjS7xPaCMylut8eLgucSsmQps6wTKNasvDKBlWKsnfUP5/n3gLW7UKOJl/VQwwhqBB/rprFkiOR62RQILxOA==" name="csrf-token" />
+<meta content="JcF/6zSRUzwGz/817MPrIZLNvnDLJU31Mb3c/enCs+vgxM5jr22+DRA3+elfQVD+OP4rvL5ZJRJEUMLz9E8f+A==" name="csrf-token" />
 
     <link href="https://assets-cdn.github.com/assets/github-84e4144e3c0347e1187b021a88b6bcbad5186ac898c63e26b13332c7c53504a6.css" media="all" rel="stylesheet" />
     <link href="https://assets-cdn.github.com/assets/github2-320555df871a1224442dd4ea0383c2a01f269a353d2ada703ea78f4500cdd2db.css" media="all" rel="stylesheet" />
@@ -80,7 +80,7 @@
 
     <div class="header-actions" role="navigation">
         <a class="button primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
-      <a class="button" href="/login?return_to=%2FTAWTonic%2FAltis-Life%2Fblob%2Fmaster%2FextDB-Build%2FAltis_Life.Altis%2FSpyGlass%2Ffn_observe.sqf" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+      <a class="button" href="/login?return_to=%2FTAWTonic%2FAltis-Life%2Fblob%2Fmaster%2FextDB-Build%2FAltis_Life.Altis%2FSpyGlass%2Fendoftheline.sqf" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
     </div>
 
     <div class="site-search repo-scope js-site-search" role="search">
@@ -291,9 +291,9 @@
         <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
           
 
-<a href="/TAWTonic/Altis-Life/blob/2218006927a4ad9825a37eedbfdd5db433e37162/extDB-Build/Altis_Life.Altis/SpyGlass/fn_observe.sqf" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+<a href="/TAWTonic/Altis-Life/blob/2218006927a4ad9825a37eedbfdd5db433e37162/extDB-Build/Altis_Life.Altis/SpyGlass/endoftheline.sqf" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
-<!-- blob contrib key: blob_contributors:v21:188ddb595bee9ec94db7966d4552e7cb -->
+<!-- blob contrib key: blob_contributors:v21:398337a8e27f65efe7ea55259380aa49 -->
 
 <div class="file-navigation js-zeroclipboard-container">
   
@@ -338,7 +338,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/TAWTonic/Altis-Life/blob/dev/extDB-Build/Altis_Life.Altis/SpyGlass/fn_observe.sqf"
+               href="/TAWTonic/Altis-Life/blob/dev/extDB-Build/Altis_Life.Altis/SpyGlass/endoftheline.sqf"
                data-name="dev"
                data-skip-pjax="true"
                rel="nofollow">
@@ -348,7 +348,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/TAWTonic/Altis-Life/blob/master/extDB-Build/Altis_Life.Altis/SpyGlass/fn_observe.sqf"
+               href="/TAWTonic/Altis-Life/blob/master/extDB-Build/Altis_Life.Altis/SpyGlass/endoftheline.sqf"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -387,7 +387,7 @@
   </div>
 
   <div class="breadcrumb js-zeroclipboard-target">
-    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/TAWTonic/Altis-Life" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">Altis-Life</span></a></span></span><span class="separator">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/TAWTonic/Altis-Life/tree/master/extDB-Build" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">extDB-Build</span></a></span><span class="separator">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/TAWTonic/Altis-Life/tree/master/extDB-Build/Altis_Life.Altis" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">Altis_Life.Altis</span></a></span><span class="separator">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/TAWTonic/Altis-Life/tree/master/extDB-Build/Altis_Life.Altis/SpyGlass" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">SpyGlass</span></a></span><span class="separator">/</span><strong class="final-path">fn_observe.sqf</strong>
+    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/TAWTonic/Altis-Life" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">Altis-Life</span></a></span></span><span class="separator">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/TAWTonic/Altis-Life/tree/master/extDB-Build" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">extDB-Build</span></a></span><span class="separator">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/TAWTonic/Altis-Life/tree/master/extDB-Build/Altis_Life.Altis" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">Altis_Life.Altis</span></a></span><span class="separator">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/TAWTonic/Altis-Life/tree/master/extDB-Build/Altis_Life.Altis/SpyGlass" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">SpyGlass</span></a></span><span class="separator">/</span><strong class="final-path">endoftheline.sqf</strong>
   </div>
 </div>
 
@@ -396,13 +396,9 @@
     <div class="file-history-tease-header">
         <img alt="TAWTonic" class="avatar" data-user="4950691" height="24" src="https://avatars3.githubusercontent.com/u/4950691?v=3&amp;s=48" width="24" />
         <span class="author"><a href="/TAWTonic" rel="author">TAWTonic</a></span>
-        <time datetime="2014-07-01T20:11:11Z" is="relative-time">Jul 1, 2014</time>
+        <time datetime="2014-12-22T18:21:01Z" is="relative-time">Dec 22, 2014</time>
         <div class="commit-title">
-            <a href="/TAWTonic/Altis-Life/commit/d5bd885084820f804c62933fb2798b3e3cfff625" class="message" data-pjax="true" title="Umm Folder restructure
-
-Restructuring this into two different builds, a build for Arma2NET/MySQL
-and a build for extDB as I am a github newb this is how I choose to do
-it. Go ADHD and willingness to not learn!">Umm Folder restructure</a>
+            <a href="/TAWTonic/Altis-Life/commit/f8ee8f1d862e798f36030f7dd12ccfd5aac0bf0e" class="message" data-pjax="true" title="Here&#39;s a undetected display guys! nope not anymore.">Here's a undetected display guys! nope not anymore.</a>
         </div>
     </div>
 
@@ -429,15 +425,15 @@ it. Go ADHD and willingness to not learn!">Umm Folder restructure</a>
 <div class="file">
   <div class="file-header">
     <div class="file-info">
-        16 lines (13 sloc)
+        1 lines (1 sloc)
         <span class="file-info-divider"></span>
-      0.608 kb
+      0.104 kb
     </div>
     <div class="file-actions">
       <div class="button-group">
-        <a href="/TAWTonic/Altis-Life/raw/master/extDB-Build/Altis_Life.Altis/SpyGlass/fn_observe.sqf" class="minibutton " id="raw-url">Raw</a>
-          <a href="/TAWTonic/Altis-Life/blame/master/extDB-Build/Altis_Life.Altis/SpyGlass/fn_observe.sqf" class="minibutton js-update-url-with-hash">Blame</a>
-        <a href="/TAWTonic/Altis-Life/commits/master/extDB-Build/Altis_Life.Altis/SpyGlass/fn_observe.sqf" class="minibutton " rel="nofollow">History</a>
+        <a href="/TAWTonic/Altis-Life/raw/master/extDB-Build/Altis_Life.Altis/SpyGlass/endoftheline.sqf" class="minibutton " id="raw-url">Raw</a>
+          <a href="/TAWTonic/Altis-Life/blame/master/extDB-Build/Altis_Life.Altis/SpyGlass/endoftheline.sqf" class="minibutton js-update-url-with-hash">Blame</a>
+        <a href="/TAWTonic/Altis-Life/commits/master/extDB-Build/Altis_Life.Altis/SpyGlass/endoftheline.sqf" class="minibutton " rel="nofollow">History</a>
       </div><!-- /.button-group -->
 
         <a class="octicon-button tooltipped tooltipped-nw"
@@ -460,69 +456,7 @@ it. Go ADHD and willingness to not learn!">Umm Folder restructure</a>
       <table class="highlight tab-size-8 js-file-line-container">
       <tr>
         <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="LC1" class="blob-code js-file-line"><span class="pl-c">/*</span></td>
-      </tr>
-      <tr>
-        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="LC2" class="blob-code js-file-line"><span class="pl-c">	File: fn_observe.sqf</span></td>
-      </tr>
-      <tr>
-        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="LC3" class="blob-code js-file-line"><span class="pl-c">	Author: Bryan &quot;Tonic&quot; Boardwine</span></td>
-      </tr>
-      <tr>
-        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="LC4" class="blob-code js-file-line"><span class="pl-c">	</span></td>
-      </tr>
-      <tr>
-        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="LC5" class="blob-code js-file-line"><span class="pl-c">	Description:</span></td>
-      </tr>
-      <tr>
-        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="LC6" class="blob-code js-file-line"><span class="pl-c">	This is the observation part of SPY-GLASS, it reports to the RPT log</span></td>
-      </tr>
-      <tr>
-        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
-        <td id="LC7" class="blob-code js-file-line"><span class="pl-c">	of unusual activity by the player.</span></td>
-      </tr>
-      <tr>
-        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
-        <td id="LC8" class="blob-code js-file-line"><span class="pl-c">*/</span></td>
-      </tr>
-      <tr>
-        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
-        <td id="LC9" class="blob-code js-file-line"><span class="pl-k">private</span>[<span class="pl-s1"><span class="pl-pds">&quot;</span>_pName<span class="pl-pds">&quot;</span></span>,<span class="pl-s1"><span class="pl-pds">&quot;</span>_pUID<span class="pl-pds">&quot;</span></span>,<span class="pl-s1"><span class="pl-pds">&quot;</span>_pReason<span class="pl-pds">&quot;</span></span>];</td>
-      </tr>
-      <tr>
-        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
-        <td id="LC10" class="blob-code js-file-line"><span class="pl-vo">_pName</span> <span class="pl-k">=</span> [<span class="pl-k">_this</span>,<span class="pl-c1">0</span>,<span class="pl-s1"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>,[<span class="pl-s1"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>]] <span class="pl-k">call</span> BIS_fnc_param;</td>
-      </tr>
-      <tr>
-        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
-        <td id="LC11" class="blob-code js-file-line"><span class="pl-vo">_pUID</span> <span class="pl-k">=</span> [<span class="pl-k">_this</span>,<span class="pl-c1">1</span>,<span class="pl-s1"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>,[<span class="pl-s1"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>]] <span class="pl-k">call</span> BIS_fnc_param;</td>
-      </tr>
-      <tr>
-        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
-        <td id="LC12" class="blob-code js-file-line"><span class="pl-vo">_pReason</span> <span class="pl-k">=</span> [<span class="pl-k">_this</span>,<span class="pl-c1">2</span>,<span class="pl-s1"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>,[<span class="pl-s1"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>]] <span class="pl-k">call</span> BIS_fnc_param;</td>
-      </tr>
-      <tr>
-        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="LC13" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
-        <td id="LC14" class="blob-code js-file-line"><span class="pl-k">if</span>(<span class="pl-vo">_pName</span> <span class="pl-k">==</span> <span class="pl-s1"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-k">OR</span> <span class="pl-vo">_pUID</span> <span class="pl-k">==</span> <span class="pl-s1"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-k">OR</span> <span class="pl-vo">_pReason</span> <span class="pl-k">==</span> <span class="pl-s1"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>) <span class="pl-k">exitWith</span> {}; <span class="pl-c">//Bad params passed..</span></td>
-      </tr>
-      <tr>
-        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
-        <td id="LC15" class="blob-code js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
-        <td id="LC16" class="blob-code js-file-line"><span class="pl-s3">diag_log</span> <span class="pl-s3">format</span>[<span class="pl-s1"><span class="pl-pds">&quot;</span>||SPY-GLASS Observes|| Name: %1 | UID: %2 | Reason: %3<span class="pl-pds">&quot;</span></span>,<span class="pl-vo">_pName</span>,<span class="pl-vo">_pUID</span>,<span class="pl-vo">_pReason</span>]; <span class="pl-c">//Outputs to RPT for external programs to parse,log,react to.</span></td>
+        <td id="LC1" class="blob-code js-file-line">#include <span class="pl-s1"><span class="pl-pds">&quot;</span>Hi, it appears that your client crashed. Do not worry we will get back with you in six years.<span class="pl-pds">&quot;</span></span></td>
       </tr>
 </table>
 
@@ -565,7 +499,7 @@ it. Go ADHD and willingness to not learn!">Umm Folder restructure</a>
     </a>
 
     <ul class="site-footer-links">
-      <li>&copy; 2015 <span title="0.03953s from github-fe128-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2015 <span title="0.03334s from github-fe119-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li><a href="/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li><a href="/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
