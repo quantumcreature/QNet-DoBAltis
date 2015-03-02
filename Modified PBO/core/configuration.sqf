@@ -75,6 +75,7 @@ life_bank_fail = false;
 life_use_atm = true;
 life_is_arrested = false;
 life_delivery_in_progress = false;
+life_toilet = 100;
 life_action_in_use = false;
 life_thirst = 100;
 life_hunger = 100;
@@ -164,7 +165,9 @@ life_inv_items =
 	"life_inv_storagesmall",
 	"life_inv_storagebig",
 	"life_inv_handcuffs",
-	"life_inv_handcuffkeys"
+	"life_inv_handcuffkeys",
+	"life_inv_diaper",
+	"life_inv_dirtydiaper"
 ];
 
 //Setup variable inv vars.
@@ -277,7 +280,8 @@ buy_array =
 	["storagesmall",75000],
 	["storagebig",150000]
 	["handcuffs",500],
-	["handcuffkeys",300]
+	["handcuffkeys",300],
+	["diaper",100]
 ];
 __CONST__(buy_array,buy_array);
 

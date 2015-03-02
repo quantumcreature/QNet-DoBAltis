@@ -67,6 +67,8 @@ switch (_mode) do
 			case "storagebig": {"life_inv_storagebig"};
 			case "handcuffs": {"life_inv_handcuffs"};
 			case "handcuffkeys": {"life_inv_handcuffkeys"};
+			case "diaper": {"life_inv_diaper"};
+			case "dirtydiaper": {"life_inv_dirtydiaper"};
 		};
 	};
 	
@@ -125,6 +127,8 @@ switch (_mode) do
 			case "life_inv_storagebig": {"storagebig"};
 			case "life_inv_handcuffs": {"handcuffs"};
 			case "life_inv_handcuffkeys": {"handcuffkeys"};
+			case "life_inv_diaper": {"diaper"};
+            case "life_inv_dirtydiaper": {"dirtydiaper"};
 		};
 	};
 };

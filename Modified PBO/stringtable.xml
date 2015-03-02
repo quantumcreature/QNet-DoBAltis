@@ -3595,6 +3595,20 @@
 			<French>Clés de menottes</French>
 			<German>Handschellenschlüssel</German>
 		</Key>
+		<Key ID="STR_Item_Diaper">
+			<Original>Diaper</Original>
+			<German>Windel</German>
+			<French>Couche</French>
+			<Italian>Pannolone</Italian>
+			<Portuguese>Fralda</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Dirtydiaper">
+			<Original>Dirty Diaper</Original>
+			<German>Benutzte Windel</German>
+			<French>Couche Sale</French>
+			<Italian>Dirty Diaper</Italian>
+			<Portuguese>Dirty Diaper</Portuguese>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">

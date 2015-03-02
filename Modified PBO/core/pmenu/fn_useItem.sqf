@@ -25,6 +25,16 @@ switch (true) do
 		[cursorTarget] spawn life_fnc_boltcutter;
 		closeDialog 0;
 	};
+};
+	
+	case (_item == "diaper"): {
+		if(([false,_item,1] call life_fnc_handleInv)) then
+	{
+		life_toilet = 100;
+		[true,"dirtydiaper",1] call life_fnc_handleInv;
+		hint "You put a new diaper on, and you just let it flow. Now you have a dirty diaper - you should better get rid of it before questions get asked.";
+	};
+};
 	
 	case (_item == "blastingcharge"): {
 		player reveal fed_bank;
