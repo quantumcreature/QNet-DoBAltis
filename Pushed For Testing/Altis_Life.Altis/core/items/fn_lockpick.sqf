@@ -19,8 +19,9 @@ if(player distance _vehicle > _distance) exitWith {}; //Too far
 _isVehicle = if((_vehicle isKindOf "LandVehicle") OR (_vehicle isKindOf "Ship") OR (_vehicle isKindOf "Air")) then {true} else {false};
 if(_isVehicle && _vehicle in life_vehicles) exitWith {hint localize "STR_ISTR_Lock_AlreadyHave"};
 
-_title = format[localize "STR_ISTR_Lock_Process",_displayName];
+_title = format["Lockpicking %1 has started...",if(!_isVehicle) then {"Handcuffs"} else {getText(configFile >> "CfgVehicles" >> (typeOf _curTarget) >> "displayName")}];
 life_action_inUse = true; //Lock out other actions
+[[_curTarget],"life_fnc_CarAlarmSound",nil,true] spawn life_fnc_MP;
 
 //Setup the progress bar
 disableSerialization;

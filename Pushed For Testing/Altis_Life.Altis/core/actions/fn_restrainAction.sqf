@@ -1,5 +1,5 @@
-	Description:
-	Retrains the target.
+	//Description:
+	//Retrains the target.
 */
 private["_unit"];
 _unit = cursorTarget;

@@ -25,7 +25,6 @@ switch (true) do
 		[cursorTarget] spawn life_fnc_boltcutter;
 		closeDialog 0;
 	};
-};
 	
 	case (_item == "diaper"): {
 		if(([false,_item,1] call life_fnc_handleInv)) then
@@ -96,7 +95,6 @@ switch (true) do
 	{
 		hint localize "STR_ISTR_NotUsable";
 	};
-};
-	
-[] call life_fnc_p_updateMenu;
+
+	[] call life_fnc_p_updateMenu;
 [] call life_fnc_hudUpdate;
