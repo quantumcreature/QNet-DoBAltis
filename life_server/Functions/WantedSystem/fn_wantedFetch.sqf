@@ -11,7 +11,7 @@ if(isNull _ret) exitWith {};
 
 _ret = owner _ret;
 _jailedUnits = [];
-{if(_x distance (getMarkerPos "jail_marker") < 120) then {_jailedUnits pushBack getPlayerUID _x}} forEach playableUnits;
+{if(_x distance (getMarkerPos "jail_marker") < 120) then {_jailedUnits pushBack getPlayerUID _x}} count playableUnits;
 
 _list = [];
 {
@@ -23,4 +23,4 @@ _list = [];
 		};
 	};
 } foreach life_wanted_list;
-[[_list],"life_fnc_wantedList",_ret,false] call life_fnc_MP;
+[[_list],"life_fnc_wantedList",_ret,false] spawn life_fnc_MP;

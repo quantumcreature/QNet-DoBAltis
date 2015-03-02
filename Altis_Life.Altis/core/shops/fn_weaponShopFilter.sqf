@@ -1,4 +1,3 @@
-#include <macro.h>
 /*
 	File: fn_weaponShopFilter.sqf
 	Author: Bryan "Tonic" Boardwine

@@ -1,4 +1,3 @@
-#include <macro.h>
 /*
 	File: fn_hudUpdate.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -9,7 +8,7 @@
 private["_ui","_food","_water","_health"];
 disableSerialization;
 
-_ui = GVAR_UINS ["playerHUD",displayNull];
+_ui = uiNameSpace getVariable ["playerHUD",displayNull];
 if(isNull _ui) then {[] call life_fnc_hudSetup;};
 _food = _ui displayCtrl 23500;
 _water = _ui displayCtrl 23510;
