@@ -67,7 +67,16 @@ class CfgSounds
 	sound[] = {"\sounds\handcuffs.ogg", 1.0, 1};
 	titles[] = {};
     };
+
+		class car_alarm
+	{
+    name = "car_alarm";
+    sound[] = {"\sounds\caralarm.ogg", 1.0, 1};
+    titles[] = {};
+  };
+	
 };
+
 
 class CfgDebriefing
 {

@@ -366,6 +366,7 @@ class Life_Client_Core
 		class defuseKit {};
 		class storageBox {};
 		class pLockpick {};
+		class CarAlarmSound {};
 	};
 	
 	class Dialog_Controls
