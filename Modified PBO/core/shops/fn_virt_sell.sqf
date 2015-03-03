@@ -9,7 +9,9 @@
 private["_type","_index","_price","_var","_amount","_name"];
 if((lbCurSel 2402) == -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
-_price = lbValue[2402,(lbCurSel 2402)];
+_index = [_type,__GETC__(sell_array)] call TON_fnc_index;
+if(_index == -1) exitWith {};
+_price = (__GETC__(sell_array) select _index) select 1;
 _var = [_type,0] call life_fnc_varHandle;
 
 _amount = ctrlText 2405;
@@ -26,7 +28,7 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
 	[] call life_fnc_virt_update;
 	
 };
-[[0,player,life_shop_type,_amount,_price,_type],"TON_fnc_Ajustprices",false,false] spawn life_fnc_MP;
+
 if(life_shop_type == "heroin") then
 {
 	private["_array","_ind","_val"];
@@ -41,9 +43,10 @@ if(life_shop_type == "heroin") then
 	}
 		else
 	{
-		_array set[count _array,[getPlayerUID player,profileName,_price]];
+		_array pushBack [getPlayerUID player,profileName,_price];
 		life_shop_npc setVariable["sellers",_array,true];
 	};
 };
 
 [0] call SOCK_fnc_updatePartial;
+[3] call SOCK_fnc_updatePartial;

@@ -28,8 +28,6 @@ __CONST__(JJJJ_MMMM___EEEEEEE_SPAWN_WEAPON,"No");
 //Make sure all functions were offloaded to the client..
 waitUntil {!isNil "SPY_fnc_menuCheck" && !isNil "SPY_fnc_variablecheck" && !isNil "SPY_fnc_cmdMenuCheck"};
 
-if(__GETC__(life_adminlevel) != 0) exitWith {};
-
 //Browse through the CfgPatches and check if any patches not white-listed by the server admin exist. Default configuration allows no extra addons.
 
 if(__GETC__(SPY_cfg_runPatchCheck)) then {
@@ -89,7 +87,6 @@ if(_onUnload != "[""onUnload"",_this,""RscDisplayInventory"",'IGUI'] call compil
 [] spawn SPY_fnc_variableCheck;
 
 //Create a no-recoil hack check.
-
 [] spawn {
 	waitUntil {(!isNil "life_fnc_moveIn")};
 	while {true} do {
@@ -102,4 +99,3 @@ if(_onUnload != "[""onUnload"",_this,""RscDisplayInventory"",'IGUI'] call compil
 		sleep 1.5;
 	};
 };
-

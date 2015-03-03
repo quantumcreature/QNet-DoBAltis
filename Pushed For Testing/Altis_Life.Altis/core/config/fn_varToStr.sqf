@@ -13,8 +13,6 @@ if(_var == "") exitWith {""};
 switch (_var) do
 {
 	//Virtual Inventory Items
-	case "life_inv_handcuffs": {(localize "STR_Item_Handcuffs")};
-	case "life_inv_handcuffkeys": {(localize "STR_Item_Handcuffkeys")};
 	case "life_inv_oilu": {(localize "STR_Item_OilU")};
 	case "life_inv_oilp": {(localize "STR_Item_OilP")};
 	case "life_inv_heroinu": {(localize "STR_Item_HeroinU")};
@@ -63,9 +61,6 @@ switch (_var) do
 	case "life_inv_defusekit": {(localize "STR_Item_DefuseKit")};
 	case "life_inv_storagesmall": {(localize "STR_Item_StorageBS")};
 	case "life_inv_storagebig": {(localize "STR_Item_StorageBL")};
-	case "life_inv_diaper": {(localize "STR_Item_Diaper")};
-	case "life_inv_dirtydiaper": {(localize "STR_Item_Dirtydiaper")};
-
 	
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};

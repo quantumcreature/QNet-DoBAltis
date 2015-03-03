@@ -53,14 +53,6 @@ class Life_Client_Core
 		class admingetID {};
 		class adminMenu {};
 		class adminQuery {};
-		class adminSpectate {};
-		class adminTeleport {};
-		class adminTpHere {};
-		class adminDebugCon {};
-		class adminCompensate {};
-		class adminGodMode {};
-		class adminFreeze {};
-		class adminMarkers {};
 	};
 	
 	class Medical_System
@@ -84,7 +76,6 @@ class Life_Client_Core
 	class Actions
 	{
 		file = "core\actions";
-		class civRestrainAction {};
 		class buyLicense {};
 		class healHospital {};
 		class pushVehicle {};
@@ -115,7 +106,6 @@ class Life_Client_Core
 		class robAction {};
 		class captureHideout {};
 		class gather {};
-		class useToilet {}; 
 	};
 	
 	class Housing
@@ -229,7 +219,6 @@ class Life_Client_Core
 		class saveGear {};
 		class loadGear {};
 		class stripDownPlayer {};
-		class fadeSound {};
 	};
 	
 	class Network
@@ -260,9 +249,6 @@ class Life_Client_Core
 		class removeLicenses {};
 		class demoChargeTimer {};
 		class civLoadout {};
-		class civInteractionMenu {};
-        class civRestrain {};
-		class freezePlayer {};
 	};
 	
 	class Vehicle
@@ -279,8 +265,6 @@ class Life_Client_Core
 		class vehicleWeight {};
 		class deviceMine {};
 		class addVehicle2Chain {};
-		class civVInteractionMenu {};
-        class medVInteractionMenu {};
 	};
 	
 	class Cop
@@ -309,7 +293,6 @@ class Life_Client_Core
 		class fedCamDisplay {};
 		class copLoadout {};
 		class ticketPaid {};
-		class copEnter {};
 	};
 	
 	class Gangs
@@ -365,8 +348,6 @@ class Life_Client_Core
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
-		class pLockpick {};
-		class CarAlarmSound {};
 	};
 	
 	class Dialog_Controls
@@ -392,13 +373,5 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
-	};
-	class economy
-	{
-		file = "core\economy";
-		class virt_updatePrice {};
-		class addsubstract {};
-		class openEconomy {};
-		class virt_updateEconomy {};
 	};
 };

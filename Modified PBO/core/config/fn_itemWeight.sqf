@@ -56,7 +56,5 @@ switch (_item) do
 	case "defusekit": {2};
 	case "storagesmall": {5};
 	case "storagebig": {10};
-	case "handcuffs": {1};
-	case "handcuffkeys": {1};
 	default {1};
 };

@@ -170,11 +170,7 @@ if(count (handGunItems player) > 0) then
     ["life_inv_spikeStrip", life_inv_spikeStrip],
     ["life_inv_defusekit", life_inv_defusekit],
     ["life_inv_storagesmall", life_inv_storagesmall],
-    ["life_inv_storagebig", life_inv_storagebig],
-	["life_inv_storagebig", life_inv_storagebig],
-    ["life_inv_handcuffs", life_inv_handcuffs],
-    ["life_inv_handcuffkeys", life_inv_handcuffkeys]
-
+    ["life_inv_storagebig", life_inv_storagebig]
 ];
 
 _return pushBack _uItems;

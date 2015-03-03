@@ -7,8 +7,9 @@
 ****** Backend Variables *****
 *****************************
 */
-life_handcuffs = ObjNull;
-life_handcuffkeys = ObjNull;
+life_god = false;
+life_frozen = false;
+life_markers = false;
 life_query_time = time;
 life_action_delay = time;
 life_trunk_vehicle = Objnull;
@@ -32,9 +33,6 @@ life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
 life_action_gathering = false;
-life_god = false;
-life_frozen = false;
-life_markers = false;
 
 //Persistent Saving
 __CONST__(life_save_civ,FALSE); //Save weapons for civs?
@@ -75,7 +73,6 @@ life_bank_fail = false;
 life_use_atm = true;
 life_is_arrested = false;
 life_delivery_in_progress = false;
-life_toilet = 100;
 life_action_in_use = false;
 life_thirst = 100;
 life_hunger = 100;
@@ -163,11 +160,7 @@ life_inv_items =
 	"life_inv_boltcutter",
 	"life_inv_defusekit",
 	"life_inv_storagesmall",
-	"life_inv_storagebig",
-	"life_inv_handcuffs",
-	"life_inv_handcuffkeys",
-	"life_inv_diaper",
-	"life_inv_dirtydiaper"
+	"life_inv_storagebig"
 ];
 
 //Setup variable inv vars.
@@ -205,7 +198,7 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500],["handcuffs",200],["handcuffkeys",100]];
+life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500]];
 
 
 /*
@@ -246,9 +239,7 @@ sell_array =
 	["fuelF",500],
 	["spikeStrip",1200],
 	["cement",1950],
-	["goldbar",95000],
-	["handcuffs",200],
-	["handcuffkeys",100]
+	["goldbar",95000]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -278,10 +269,7 @@ buy_array =
 	["boltcutter",7500],
 	["defusekit",2500],
 	["storagesmall",75000],
-	["storagebig",150000],
-	["handcuffs",500],
-	["handcuffkeys",300],
-	["diaper",100]
+	["storagebig",150000]
 ];
 __CONST__(buy_array,buy_array);
 

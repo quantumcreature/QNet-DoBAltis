@@ -52,15 +52,9 @@ if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,inde
 
 
 //If target is a player then check if we can use the cop menu.
-if(isPlayer _curTarget && _curTarget isKindOf "Man") then 
-{
-	if((_curTarget getVariable["restrained",false]) && {!(player getVariable["restrained",false])} && !dialog && playerSide == west) then 
-	{
+if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
+	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == west) then {
 		[_curTarget] call life_fnc_copInteractionMenu;
-	};
-	if((_curTarget getVariable["restrained",false]) && {!(player getVariable["restrained",false])} && !dialog && playerSide == civilian) exitWith
-	{
-	    [_curTarget] call life_fnc_civInteractionMenu;
 	};
 } else {
 	//OK, it wasn't a player so what is it?
@@ -73,14 +67,8 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then
 	//It's a vehicle! open the vehicle interaction key!
 	if(_isVehicle) then {
 		if(!dialog) then {
-			if(playerSide == west && player distance _curTarget < (((boundingBox _curTarget select 1) select 0) + 2)) then {
+			if(player distance _curTarget < ((boundingBox _curTarget select 1) select 0) + 2) then {
 				[_curTarget] call life_fnc_vInteractionMenu;
-			};
-			if(playerSide == civilian && player distance _curTarget < (((boundingBox _curTarget select 1) select 0) + 2)) then {
-			    [_curTarget] call life_fnc_civVInteractionMenu;
-			};
-			if(playerSide == independent && player distance _curTarget < (((boundingBox _curTarget select 1) select 0) + 2)) then {
-			    [_curTarget] call life_fnc_medVInteractionMenu;
 			};
 		};
 	} else {
@@ -113,4 +101,4 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then
 			};
 		};
 	};
-}; 
+};

@@ -26,15 +26,6 @@ switch (true) do
 		closeDialog 0;
 	};
 	
-	case (_item == "diaper"): {
-		if(([false,_item,1] call life_fnc_handleInv)) then
-	{
-		life_toilet = 100;
-		[true,"dirtydiaper",1] call life_fnc_handleInv;
-		hint "You put a new diaper on, and you just let it flow. Now you have a dirty diaper - you should better get rid of it before questions get asked.";
-	};
-};
-	
 	case (_item == "blastingcharge"): {
 		player reveal fed_bank;
 		(group player) reveal fed_bank;
@@ -81,6 +72,11 @@ switch (true) do
 		[] spawn life_fnc_jerryRefuel;
 	};
 	
+	case (_item == "lockpick"):
+	{
+		[] spawn life_fnc_lockpick;
+	};
+	
 	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach"]):
 	{
 		[_item] call life_fnc_eatFood;
@@ -95,6 +91,7 @@ switch (true) do
 	{
 		hint localize "STR_ISTR_NotUsable";
 	};
-
-	[] call life_fnc_p_updateMenu;
+};
+	
+[] call life_fnc_p_updateMenu;
 [] call life_fnc_hudUpdate;
