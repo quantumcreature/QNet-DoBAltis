@@ -2,7 +2,6 @@
 /*
 	File: fn_virt_sell.sqf
 	Author: Bryan "Tonic" Boardwine
-	Edited by worldtrade1101
 	
 	Description:
 	Sell a virtual item to the store / shop
@@ -11,7 +10,7 @@ private["_type","_index","_price","_var","_amount","_name"];
 if((lbCurSel 2402) == -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
 _price = lbValue[2402,(lbCurSel 2402)];
-
+_var = [_type,0] call life_fnc_varHandle;
 
 _amount = ctrlText 2405;
 if(!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
@@ -32,7 +31,7 @@ if(life_shop_type == "heroin") then
 {
 	private["_array","_ind","_val"];
 	_array = life_shop_npc getVariable["sellers",[]];
-	_ind = [getPlayerUID player,_array] call fnc_index;
+	_ind = [getPlayerUID player,_array] call TON_fnc_index;
 	if(_ind != -1) then
 	{
 		_val = (_array select _ind) select 2;
@@ -46,5 +45,5 @@ if(life_shop_type == "heroin") then
 		life_shop_npc setVariable["sellers",_array,true];
 	};
 };
+
 [0] call SOCK_fnc_updatePartial;
-[3] call SOCK_fnc_updatePartial;

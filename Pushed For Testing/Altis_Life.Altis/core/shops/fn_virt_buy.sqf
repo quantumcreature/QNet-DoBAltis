@@ -2,7 +2,6 @@
 /*
 	File: fn_virt_buy.sqf
 	Author: Bryan "Tonic" Boardwine
-	Edited by worldtrade1101
 	
 	Description:
 	Buy a virtual item from the store.
@@ -52,8 +51,6 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 		__SUB__(life_cash,(_price * _amount));
 		[[1,player,life_shop_type,_amount,_price,_type],"TON_fnc_Ajustprices",false,false] spawn life_fnc_MP;
 	};
-	
 	[] call life_fnc_virt_update;
 };
 [0] call SOCK_fnc_updatePartial;
-[3] call SOCK_fnc_updatePartial;
