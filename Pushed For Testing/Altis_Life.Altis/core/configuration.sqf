@@ -7,8 +7,8 @@
 ****** Backend Variables *****
 *****************************
 */
-life_handcuffs = ObjNull
-life_handcuffkeys = ObjNull
+life_handcuffs = ObjNull;
+life_handcuffkeys = ObjNull;
 life_query_time = time;
 life_action_delay = time;
 life_trunk_vehicle = Objnull;
@@ -246,7 +246,7 @@ sell_array =
 	["fuelF",500],
 	["spikeStrip",1200],
 	["cement",1950],
-	["goldbar",95000]
+	["goldbar",95000],
 	["handcuffs",200],
 	["handcuffkeys",100]
 ];
@@ -278,7 +278,7 @@ buy_array =
 	["boltcutter",7500],
 	["defusekit",2500],
 	["storagesmall",75000],
-	["storagebig",150000]
+	["storagebig",150000],
 	["handcuffs",500],
 	["handcuffkeys",300],
 	["diaper",100]
