@@ -147,6 +147,9 @@ if(count (handGunItems player) > 0) then
         };
     };
 } forEach [
+	["life_inv_storagebig", life_inv_storagebig],
+    ["life_inv_handcuffs", life_inv_handcuffs],
+    ["life_inv_handcuffkeys", life_inv_handcuffkeys],
     ["life_inv_apple", life_inv_apple],
     ["life_inv_rabbit", life_inv_rabbit],
     ["life_inv_salema", life_inv_salema],
