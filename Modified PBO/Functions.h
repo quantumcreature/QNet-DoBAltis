@@ -53,14 +53,6 @@ class Life_Client_Core
 		class admingetID {};
 		class adminMenu {};
 		class adminQuery {};
-		class adminSpectate {};
-		class adminTeleport {};
-		class adminTpHere {};
-		class adminDebugCon {};
-		class adminCompensate {};
-		class adminGodMode {};
-		class adminFreeze {};
-		class adminMarkers {};
 	};
 	
 	class Medical_System
@@ -262,7 +254,6 @@ class Life_Client_Core
 		class civLoadout {};
 		class civInteractionMenu {};
         class civRestrain {};
-		class freezePlayer {};
 	};
 	
 	class Vehicle
@@ -392,13 +383,5 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
-	};
-	class economy
-	{
-		file = "core\economy";
-		class virt_updatePrice {};
-		class addsubstract {};
-		class openEconomy {};
-		class virt_updateEconomy {};
 	};
 };
