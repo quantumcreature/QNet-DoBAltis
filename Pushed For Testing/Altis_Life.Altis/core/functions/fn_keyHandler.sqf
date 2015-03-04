@@ -296,20 +296,13 @@ case 34:
 	};
 };	 
 
+//Shift+O = Faded Sound
 case 24:
 {
-	if(_shift) then
+    if(_shift) then
     {
-       if (soundVolume != 1) then 
-       {
-	   1 fadeSound 1;
-	    titleText ["Your sound has returned to normal.", "PLAIN"];
-       }
-        else
-       {
-	     1 fadeSound 0.4;
-	     titleText ["Your sound has been lowered.", "PLAIN"];
-       };
+        [] call life_fnc_fadeSound;
+        _handled = true;
     };
 };
 

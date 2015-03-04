@@ -11,8 +11,10 @@ enableSaving[false,false];
 life_versionInfo = "Altis Life RPG v3.1.4.8";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
-[] execVM "welcome.sqf";
+[] execVM "addons\scripts\no_side_chat.sqf";
 
 StartProgress = true;
 
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
+
+[] execVM "addons\scripts\script_intro.sqf";
