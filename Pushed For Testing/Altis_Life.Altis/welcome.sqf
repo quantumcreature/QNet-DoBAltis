@@ -9,7 +9,7 @@ Creates an intro on the bottom-right hand corner of the screen.
 _serverName = "Dirty Old Gamers-Powered By The Quantum Network";
 _plrName = profileName;
 _class = playerSide player;
-_sound = "Intro";
+_sound = "";
  
 //Pause the script until the player has spawned.
 waitUntil {alive player};

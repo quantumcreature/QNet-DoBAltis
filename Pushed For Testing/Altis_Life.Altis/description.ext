@@ -68,6 +68,13 @@ class CfgSounds
 	titles[] = {};
     };
 	
+	class Intro
+  {
+    name="Intro";
+    sound[]={"\sounds\welcome.ogg",0.9,1};
+    titles[] = {};
+  };
+	
 	class Yelp
 	{
 		name = "Yelp";
