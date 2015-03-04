@@ -247,6 +247,16 @@ case 34:
         };
     };
 
+	//Shift+O = Faded Sound
+	case 24:
+	{
+		if(_shift) then
+		{
+			[] call life_fnc_fadeSound;
+			_handled = true;
+		};
+	};
+	
 	//U Key
 	case 22:
 	{
@@ -294,16 +304,6 @@ case 34:
 			};
 		};
 	};
-};	 
-
-//Shift+O = Faded Sound
-case 24:
-{
-    if(_shift) then
-    {
-        [] call life_fnc_fadeSound;
-        _handled = true;
-    };
-};
+};	
 
 _handled;

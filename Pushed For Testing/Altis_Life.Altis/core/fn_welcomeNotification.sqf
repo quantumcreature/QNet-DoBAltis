@@ -4,7 +4,7 @@ Author: ZedBuster
     Link: opendayz.net/threads/dayz-welcome-message-credits-style.13071/
 Description:
 Creates an intro on the bottom-right hand corner of the screen.
-*/
+
  
 _serverName = "Dirty Old Gamers-Powered By The Quantum Network";
 _plrName = profileName;
@@ -67,3 +67,4 @@ sleep (_onScreenTime);
 [_role4, _role4names],
 [_role5, _role5names]
 ];
+*/
