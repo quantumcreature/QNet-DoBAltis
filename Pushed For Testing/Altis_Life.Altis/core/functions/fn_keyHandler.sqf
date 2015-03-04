@@ -296,4 +296,21 @@ case 34:
 	};
 };	 
 
+case 24:
+{
+	if(_shift) then
+    {
+       if (soundVolume != 1) then 
+       {
+	   1 fadeSound 1;
+	    titleText ["Your sound has returned to normal.", "PLAIN"];
+       }
+        else
+       {
+	     1 fadeSound 0.4;
+	     titleText ["Your sound has been lowered.", "PLAIN"];
+       };
+    };
+};
+
 _handled;

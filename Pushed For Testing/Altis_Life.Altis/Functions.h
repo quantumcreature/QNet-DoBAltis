@@ -232,6 +232,7 @@ class Life_Client_Core
 		class saveGear {};
 		class loadGear {};
 		class stripDownPlayer {};
+		class fadeSound {};
 	};
 	
 	class Network
@@ -393,5 +394,14 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
+	};
+	
+	class economy
+	{
+		file = "core\economy";
+		class virt_updatePrice {};
+		class addsubstract {};
+		class openEconomy {};
+		class virt_updateEconomy {};
 	};
 };

@@ -35,6 +35,7 @@ life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
 life_action_gathering = false;
+life_fadeSound = false;
 
 //Persistent Saving
 __CONST__(life_save_civ,FALSE); //Save weapons for civs?
