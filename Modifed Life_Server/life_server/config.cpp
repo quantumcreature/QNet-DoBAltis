@@ -105,7 +105,21 @@ class CfgFunctions
 			class cleanupRequest {};
 			class setObjVar {};
 			class keyManagement {};
+			class handleMessages {};
+			class msgRequest {};
+			class getPrices {};
+            class ajustprices {};
 		};
+		
+		class GHBSystem
+		{
+			tag = "GHB";
+			class Smartphone
+		{
+			file = "\life_server\Functions\Smartphone";
+		
+		};	
+	};
 		
 		class Housing
 		{

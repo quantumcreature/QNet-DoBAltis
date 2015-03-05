@@ -83,6 +83,7 @@ life_hunger = 100;
 life_toilet = 100;
 life_nlrtimer_stop = false;
 life_nlrtimer_running = false;
+life_sitting = false;
 
 __CONST__(life_paycheck_period,5); //Five minutes
 life_cash = 0;
