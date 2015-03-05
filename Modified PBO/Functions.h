@@ -79,6 +79,7 @@ class Life_Client_Core
 		class medicSirenLights {};
 		class medicLights {};
 		class medicSiren {};
+		class newLifeRule {};
 	};
 	
 	class Actions
@@ -313,6 +314,7 @@ class Life_Client_Core
 		class copLoadout {};
 		class ticketPaid {};
 		class copSiren2 {};
+		class copEnter {};
 	};
 	
 	class Gangs
