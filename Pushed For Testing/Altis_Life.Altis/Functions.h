@@ -79,6 +79,7 @@ class Life_Client_Core
 		class medicSirenLights {};
 		class medicLights {};
 		class medicSiren {};
+		class newLifeRule {};
 	};
 	
 	class Actions
@@ -116,6 +117,7 @@ class Life_Client_Core
 		class gather {};
 		class civRestrainAction {};
 		class useToilet {}; 
+		class sitDown {};
 	};
 	
 	class Housing
@@ -155,6 +157,7 @@ class Life_Client_Core
 		class weaponShopCfg {};
 		class vehicleWeightCfg {};
 		class houseConfig {};
+		class seizeCfg {};
 		
 		//Clothing Store Configs
 		class clothing_cop {};
@@ -188,6 +191,8 @@ class Life_Client_Core
 		class smartphone {};
 		class newMsg {};
 		class showMsg {};
+		class wantedadd2 {};
+		class wanted2 {};
 	};
 	
 	class Functions
@@ -313,6 +318,9 @@ class Life_Client_Core
 		class copLoadout {};
 		class ticketPaid {};
 		class copSiren2 {};
+		class copEnter {};
+		class seizePlayerWeapon {};
+		class seizePlayerWeaponAction {};
 	};
 	
 	class Gangs
