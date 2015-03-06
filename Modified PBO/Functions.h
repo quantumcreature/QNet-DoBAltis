@@ -321,6 +321,8 @@ class Life_Client_Core
 		class copEnter {};
 		class seizePlayerWeapon {};
 		class seizePlayerWeaponAction {};
+		class showArrestDialog {};
+		class arrestDialog_Arrest {};
 	};
 	
 	class Gangs
