@@ -118,6 +118,7 @@ class Life_Client_Core
 		class civRestrainAction {};
 		class useToilet {}; 
 		class sitDown {};
+		class robShops {}; //Rob Gas Station & Shops Script
 	};
 	
 	class Housing
