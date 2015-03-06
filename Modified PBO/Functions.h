@@ -193,6 +193,7 @@ class Life_Client_Core
 		class showMsg {};
 		class wantedadd2 {};
 		class wanted2 {};
+		class AAN {};
 	};
 	
 	class Functions
@@ -404,6 +405,8 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
+		class calldialog {};
+		class sendChannel {};
 	};
 	
 	class economy
