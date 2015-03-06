@@ -29,19 +29,14 @@ switch(_shop) do
 			{
 				["Altis Cop Shop",
 					[
-						["arifle_sdar_F","Taser Rifle",20000],
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["hgun_P07_F",nil,7500],
-						["HandGrenade_Stone","Flashbang",1700],
-						["Binocular",nil,150],
-						["ItemGPS",nil,100],
-						["ToolKit",nil,250],
-						["muzzle_snds_L",nil,650],
-						["FirstAidKit",nil,150],
-						["Medikit",nil,1000],
-						["NVGoggles",nil,2000],
-						["16Rnd_9x21_Mag",nil,50],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
+						["hgun_P07_snds_F","Taser",0],
+						["16Rnd_9x21_Mag","Taser Cartridges",0],
+						["Rangefinder",nil,0],
+						["ItemGPS",nil,0],
+						["ToolKit",nil,0],
+						["FirstAidKit",nil,0],
+						["Medikit",nil,0],
+						["NVGoggles_OPFOR",nil,0]
 					]
 				];
 			};
@@ -74,21 +69,14 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 2): {"You are not at a patrol officer rank!"};
+			case (__GETC__(life_coplevel) < 2): {"You are not a patrol officer!"};
 			default
 			{
 				["Altis Patrol Officer Shop",
 					[
-						["arifle_MX_F",nil,35000],
-						["SMG_02_ACO_F",nil,30000],
-						["HandGrenade_Stone","Flashbang",1700],
-						["MineDetector",nil,1000],
-						["acc_flashlight",nil,750],
-						["optic_Holosight",nil,1200],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,130],
-						["30Rnd_9x21_Mag",nil,250]
+						["SMG_01_F",nil,0],
+						["30Rnd_45ACP_Mag_SMG_01",nil,0],
+						["optic_Holosight_smg",nil,0]
 					]
 				];
 			};
@@ -100,20 +88,150 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 3): {"You are not at a sergeant rank!"};
+			case (__GETC__(life_coplevel) < 3): {"You are not a Sergeant!"};
 			default
 			{
-				["Altis Sergeant Officer Shop",
+				["Altis Sergeant Shop",
 					[
-						["SMG_02_ACO_F",nil,15000],
-						["hgun_ACPC2_F",nil,17500],
-						["HandGrenade_Stone","Flashbang",1700],
-						["arifle_MXC_F",nil,30000],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["30Rnd_9x21_Mag",nil,60],
-						["9Rnd_45ACP_Mag",nil,200]
+						["arifle_MXC_Black_F",nil,0],
+						["30Rnd_65x39_caseless_mag",nil,0],
+						["optic_Hamr",nil,0],
+						["optic_Holosight",nil,0],
+						["acc_pointer_IR",nil,0],
+						["acc_flashlight",nil,0],
+						["HandGrenade_Stone","Flashbang",0]
+					]
+				];
+			};
+		};
+	};
+	
+		case "cop_lieutenant":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) < 4): {"You are not a Lieutenant!"};
+			default
+			{
+				["Altis Lieutenant Shop",
+					[
+						["arifle_MX_Black_F",nil,0],
+						["30Rnd_65x39_caseless_mag",nil,0],
+						["arifle_MX_SW_Black_F",nil,0],
+						["100Rnd_65x39_caseless_mag",nil,0],
+						["arifle_MXM_Black_F",nil,0],
+						["30Rnd_65x39_caseless_mag",nil,0],
+						["optic_SOS",nil,0],
+						["optic_DMS",nil,0],
+						["optic_Hamr",nil,0],
+						["optic_Holosight",nil,0],
+						["acc_pointer_IR",nil,0],
+						["acc_flashlight",nil,0],
+						["HandGrenade_Stone","Flashbang",0]
+					]
+				];
+			};
+		};
+	};
+	
+			case "cop_captain":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) < 5): {"You are not a Captain!"};
+			default
+			{
+				["Altis Captain Shop",
+					[
+						["arifle_MX_Black_F",nil,0],
+						["30Rnd_65x39_caseless_mag",nil,0],
+						["arifle_MXM_Black_F",nil,0],
+						["30Rnd_65x39_caseless_mag",nil,0],
+						["srifle_LRR_F",nil,0],
+						["7Rnd_408_Mag",nil,0],
+						["optic_LRPS",nil,0],
+						["optic_SOS",nil,0],
+						["optic_DMS",nil,0],
+						["optic_Hamr",nil,0],
+						["optic_Holosight",nil,0],
+						["acc_pointer_IR",nil,0],
+						["acc_flashlight",nil,0],
+						["HandGrenade_Stone","Flashbang",0]
+					]
+				];
+			};
+		};
+	};
+	
+				case "cop_major":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) < 6): {"You are not a Major!"};
+			default
+			{
+				["Altis Major Shop",
+					[
+						["srifle_EBR_F",nil,0],
+						["20Rnd_762x51_Mag",nil,0],
+						["srifle_LRR_F",nil,0],
+						["7Rnd_408_Mag",nil,0],
+						["LMG_Mk200_F",nil,0],
+						["200Rnd_65x39_cased_Box",nil,0],
+						["200Rnd_65x39_cased_Box_Tracer",nil,0],
+						["optic_tws",nil,0],
+						["optic_tws_mg",nil,0],
+						["optic_LRPS",nil,0],
+						["optic_SOS",nil,0],
+						["optic_DMS",nil,0],
+						["optic_Hamr",nil,0],
+						["optic_Holosight",nil,0],
+						["acc_pointer_IR",nil,0],
+						["acc_flashlight",nil,0],
+						["HandGrenade_Stone","Flashbang",0]
+					]
+				];
+			};
+		};
+	};
+	
+		case "cop_chief":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) < 7): {"You wish you were Chief!"};
+			default
+			{
+				["Altis Chiefs Shop",
+					[
+						["srifle_EBR_F",nil,0],
+						["20Rnd_762x51_Mag",nil,0],
+						["arifle_Katiba_F",nil,0],
+						["30Rnd_65x39_caseless_green",nil,0],
+						["srifle_LRR_F",nil,0],
+						["7Rnd_408_Mag",nil,0],
+						["srifle_GM6_F",nil,0],
+						["5Rnd_127x108_APDS_Mag",nil,0],
+						["LMG_Zafir_F","Big Baby",0],
+						["150Rnd_762x51_Box",nil,0],
+						["150Rnd_762x51_Box_Tracer",nil,0],
+						["launch_RPG32_F",nil,0],
+						["RPG32_F",nil,0],
+						["optic_optic_Nightstalker",nil,0],
+						["optic_tws",nil,0],
+						["optic_tws_mg",nil,0],
+						["optic_LRPS",nil,0],
+						["optic_SOS",nil,0],
+						["optic_DMS",nil,0],
+						["optic_Hamr",nil,0],
+						["optic_Holosight",nil,0],
+						["acc_pointer_IR",nil,0],
+						["acc_flashlight",nil,0],
+						["HandGrenade_Stone","Flashbang",0]
 					]
 				];
 			};
