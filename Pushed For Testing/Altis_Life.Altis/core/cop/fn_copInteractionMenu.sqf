@@ -95,7 +95,7 @@ _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
 
 //Button 6 - Set arrest button
 _Btn6 ctrlSetText localize "STR_pInAct_Arrest";
-_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction;";
+_Btn6 buttonSetAction "closeDialog 0; [] call life_fnc_showArrestDialog;";
 
 //Check that you are near one of the right places to put someone in prison
 if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (getMarkerPos "police_hq_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR (player distance (getMarkerPos "cop_spawn_5") < 30))) then 

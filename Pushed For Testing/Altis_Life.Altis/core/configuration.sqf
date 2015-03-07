@@ -36,6 +36,8 @@ life_respawned = false;
 life_removeWanted = false;
 life_action_gathering = false;
 life_fadeSound = false;
+//Channel 7
+life_channel_send = true;
 
 //Persistent Saving
 __CONST__(life_save_civ,FALSE); //Save weapons for civs?

@@ -118,6 +118,7 @@ class Life_Client_Core
 		class civRestrainAction {};
 		class useToilet {}; 
 		class sitDown {};
+		class robShops {}; //Rob Gas Station & Shops Script
 	};
 	
 	class Housing
@@ -193,6 +194,7 @@ class Life_Client_Core
 		class showMsg {};
 		class wantedadd2 {};
 		class wanted2 {};
+		class AAN {};
 	};
 	
 	class Functions
@@ -321,6 +323,8 @@ class Life_Client_Core
 		class copEnter {};
 		class seizePlayerWeapon {};
 		class seizePlayerWeaponAction {};
+		class showArrestDialog {};
+		class arrestDialog_Arrest {};
 	};
 	
 	class Gangs
@@ -402,6 +406,8 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
+		class calldialog {};
+		class sendChannel {};
 	};
 	
 	class economy
