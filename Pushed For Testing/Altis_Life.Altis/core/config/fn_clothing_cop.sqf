@@ -2,7 +2,7 @@
 /*
 	File: fn_clothing_cop.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master config file for Cop clothing store.
 */
@@ -19,85 +19,118 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret pushBack ["U_Rangemaster","Cop Uniform",0];
+		if(__GETC__(life_coplevel) == 0) then
+		{
+        	_ret =
+		[
+			["U_Rangemaster","Grunt Uniform",500]
+		];
+		};
+		if(__GETC__(life_coplevel) == 1) then
+		{
+        	_ret =
+		[
+			["U_Rangemaster","Grunt Uniform",500]
+		];
+		};
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["U_B_CombatUniform_mcam_tshirt",nil,0];
-			_ret pushBack ["U_B_survival_uniform",nil,0];
+			_ret set[count _ret,["U_Competitor","Officer",500]];
 		};
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) == 3) then
 		{
-			_ret pushBack ["U_B_CombatUniform_mcam_worn",nil,0];
+			_ret set[count _ret,["U_B_CombatUniform_mcam","Sergeant",500]];
 		};
-		if(__GETC__(life_coplevel) > 7) then
+		if(__GETC__(life_coplevel) == 4) then
 		{
-			_ret pushBack ["U_BG_Guerilla2_1",nil,0];
-			_ret pushBack ["U_B_GhillieSuit",nil,0];
+			_ret set[count _ret,["U_IG_Guerilla2_1","DEA",500]];
 		};
+		if(__GETC__(life_coplevel) == 5) then
+		{
+			_ret set[count _ret,["U_B_CombatUniform_mcam_worn","SWAT",1250]];
+		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_ret set[count _ret,["U_B_SpecopsUniform_sgg","Police Chief",1250]];
+		};
+		
+		[] call life_fnc_updateClothing;
 	};
-	
+
 	//Hats
 	case 1:
 	{
-		if(__GETC__(life_coplevel) > 1) then
-		{
-			_ret pushBack ["H_HelmetB_plain_mcamo",nil,0];
-			_ret pushBack ["H_Booniehat_mcamo",nil,0];
-		};
-		
+		_ret =
+		[
+			["H_MilCap_blue","Cop Blue Hat",500],
+			["H_MilCap_gry","Cop Grey Hat",500]
+		];
 		if(__GETC__(life_coplevel) > 2) then
 		{
-			_ret pushBack ["H_MilCap_mcamo",nil,0];
+			_ret set[count _ret,["H_Beret_blk_POLICE","Sergeant Hat",500]];
 		};
-		
-		if(__GETC__(life_coplevel) > 7) then
+		if(__GETC__(life_coplevel) > 2) then
 		{
-			_ret pushBack ["H_Cap_blk",nil,0];
-			_ret pushBack ["H_Beret_blk_POLICE",nil,0];
-			_ret pushBack ["H_CrewHelmetHeli_B",nil,0];
+			_ret set[count _ret,["H_Beret_Colonel","Lieutenant Hat",500]];
+		};
+		if(__GETC__(life_coplevel) > 2) then
+		{
+			_ret set[count _ret,["H_PilotHelmetHeli_B","SWAT Helmet",500]];
+			_ret set[count _ret,["H_Watchcap_blk","SWAT Beanie Hat",500]];
+			_ret set[count _ret,["H_HelmetSpecB_blk","SWAT Helmet",500]];
+			_ret set[count _ret,["H_CrewHelmetHeli_B","Tear Gas Helmet",500]];			
+			_ret set[count _ret,["H_Cap_blk",250]];
 		};
 	};
-	
-	//Glasses
+
+		//Glasses
 	case 2:
 	{
-		_ret = 
+		_ret =
 		[
-			["G_Shades_Black",nil,0],
-			["G_Shades_Blue",nil,0],
-			["G_Sport_Blackred",nil,0],
-			["G_Sport_Checkered",nil,0],
-			["G_Sport_Blackyellow",nil,0],
-			["G_Sport_BlackWhite",nil,0],
-			["G_Aviator",nil,0],
-			["G_Squares",nil,0],
-			["G_Lowprofile",nil,0],
-			["G_Combat",nil,0]
+			["G_Shades_Black","Black Shades",500],
+			["G_Shades_Blue","Blue Shades",500],
+			["G_Sport_Blackred","Black Red Shades",500],
+			["G_Sport_Checkered","Checkered Shades",500],
+			["G_Sport_Blackyellow","Black Yellow Shades",500],
+			["G_Sport_BlackWhite","Black White Shades",500],
+			["G_Aviator","Aviators",500],
+			["G_Squares","Square Glasses",500],
+			["G_Lowprofile","Lowprofile Glasses",500],
+			["G_Combat","Combat Goggles",500]
 		];
 	};
-	
-	//Vest
+
+		//Vest
 	case 3:
 	{
-		_ret pushBack ["V_Rangemaster_belt",nil,800];
-		if(__GETC__(life_coplevel) > 1) then
+		_ret =
+		[
+			["V_RebreatherB","Rebreather", 500],
+			["V_TacVest_blk_POLICE","Cop Vest",500]
+		];
+		if(__GETC__(life_coplevel) > 4) then
 		{
-			_ret pushBack ["V_PlateCarrier2_rgr",nil,0];
-		};
-		if(__GETC__(life_coplevel) > 7) then
-		{
-			_ret pushBack ["V_TacVest_blk_POLICE",nil,0];
-		};
+			_ret set[count _ret,["V_TacVestIR_blk","SWAT Vest",500]];
+		};			
 	};
-	
+
+
 	//Backpacks
 	case 4:
 	{
 		_ret =
 		[
-			["B_Bergen_blk",nil,0],
-			["B_Carryall_cbr",nil,0]
+			["B_Kitbag_cbr","Police Backpack",500]
 		];
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_ret set[count _ret,["B_Kitbag_sgg","SWAT Backpack",500]];
+		};		
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_ret set[count _ret,["B_UAV_01_backpack_F","Darter UAV",50000]];
+		};
 	};
 };
 
