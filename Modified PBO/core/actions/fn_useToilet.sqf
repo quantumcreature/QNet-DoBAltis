@@ -8,17 +8,17 @@ if(life_cash >= 10) then
 		
 	if(_dice > 8) then
     {
-		hint parseText "Das war befreiend! Du bist erfolgreich auf Toilette gegangen. <br/><br/>Mama ist stolz auf dich!";
+		hint parseText "It was liberating! You have successfully gone to the toilet. <br/><br/>Mom is proud of you!";
     }
     else
     {
-		hint "Tolle Leistung, Einstein! Du hast vergessen die Klobrille hochzuklappen. Jetzt hast du dich selbst vollgepinkelt. Aber immerhin ist nun die Blase leer. Versuch es vielleicht doch lieber mit Windeln.";
+		hint "Great job , Einstein ! You forgot to lift up the toilet seat. Now you've peed yourself. But at least the bladder is empty now. Perhaps you prefer diapers.";
     };
 	[] call life_fnc_hudUpdate;
 }
 else
 {
-	hint "Tut mir leid, du hast nicht genug Geld bei dir. Das benutzen der Toilette kostet 10$!";
+	hint "Sorry , you did not have enough money with you. The use of the toilet costs 10$!";
 };
 
 
