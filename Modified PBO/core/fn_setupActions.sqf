@@ -164,14 +164,14 @@ switch (playerSide) do
             ]
         ];         
     };
-	
-	 //Seize PlayerWeapons
-    life_actions = life_actions + [player addAction["Waffe beschlagnahmen",life_fnc_seizePlayerWeapon,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && (cursorTarget getVariable "restrained")']];
 };
 
-//Hinsetzen
-life_actions = life_actions + [player addAction["<t color='#0099FF'>Sitdown</t>",life_fnc_sitDown,cursorTarget,10,false,false,"",
-' !isNull cursorTarget && (player distance cursorTarget) < 3 && (cursorTarget isKindOf "Land_CampingChair_V2_F" || cursorTarget isKindOf "Land_ChairWood_F")']];
-//Aufstehen
-life_actions = life_actions + [player addAction["<t color='#0099FF'>Stand Up</t>", life_fnc_sitDown,cursorTarget,10,false,false,"",
-'life_sitting']];
+	
+//Seize PlayerWeapons
+		life_actions = life_actions + [player addAction["Confiscate weapons",life_fnc_seizePlayerWeapon,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && (cursorTarget getVariable "restrained")']];
+
+//Chaise
+		life_actions = life_actions + [player addAction["<t color='#0099FF'>sit</t>",life_fnc_sitDown,cursorTarget,10,false,false,"",
+		' !isNull cursorTarget && (player distance cursorTarget) < 3 && (cursorTarget isKindOf "Land_CampingChair_V2_F" || cursorTarget isKindOf "Land_ChairWood_F" || cursorTarget isKindOf "Land_ChairPlastic_F" || cursorTarget isKindOf "Land_Bench_F") && !life_sitting']];
+		life_actions = life_actions + [player addAction["<t color='#0099FF'>Se lever</t>", life_fnc_sitDown, cursorTarget,10,false,false,"",
+		'life_sitting']];
