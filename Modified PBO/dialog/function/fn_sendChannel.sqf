@@ -12,12 +12,12 @@ disableSerialization;
 
 waitUntil {!isnull (findDisplay 9000)};
 
-if ( life_cash < 6000 ) exitWith { systemChat "Du benötigst 6000€ um eine Nachricht zu senden!"; }; // Hint if person haves no 6000 dollar
-if !( life_channel_send ) exitWith { systemChat "Warte 10 Minuten bevor du einen neue Nachricht sendest!"; }; //Gives Player the Hint to Wait 10 mins
+if ( life_cash < 6000 ) exitWith { systemChat "You need $6,000 to send a message!"; }; // Hint if person haves no 6000 dollar
+if !( life_channel_send ) exitWith { systemChat "Wait 10 minutes before you send a new message!"; }; //Gives Player the Hint to Wait 10 mins
 life_cash = life_cash - 6000;
 
 _message = ctrlText 9001;
-[[3,format ["%1 sends this from Channel7 to all: %2",name player,_message]],"life_fnc_broadcast",true,false] call life_fnc_MP;
+[[3,format ["%1 sends this from Channel7 to all: %2",player getVariable["realname",name player],_message]],"life_fnc_broadcast",civilian,false] call life_fnc_MP;
 life_channel_send = false;
 
 [] spawn
