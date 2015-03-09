@@ -17,6 +17,7 @@ switch (_mode) do
 		switch (_var) do
 		{
 			case "oilu": {"life_inv_oilu"};
+			case "uwsl": {"life_inv_uwsl"};
 			case "oilp": {"life_inv_oilp"};
 			case "heroinu": {"life_inv_heroinu"};
 			case "heroinp": {"life_inv_heroinp"};
@@ -77,6 +78,7 @@ switch (_mode) do
 		switch (_var) do
 		{
 			case "life_inv_oilu": {"oilu"};
+			case "life_inv_uwsl": {"uwsl"};
 			case "life_inv_oilp": {"oilp"};
 			case "life_inv_heroinu": {"heroinu"};
 			case "life_inv_heroinp": {"heroinp"};

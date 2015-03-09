@@ -126,6 +126,7 @@ __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can nev
 life_inv_items = 
 [
 	"life_inv_oilu",
+	"life_inv_uwsl",
 	"life_inv_oilp",
 	"life_inv_heroinu",
 	"life_inv_heroinp",
@@ -223,6 +224,7 @@ life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocai
 sell_array = 
 [
 	["apple",50],
+	["uwsl",5000],
 	["heroinu",1850],
 	["heroinp",2650],
 	["salema",45],
@@ -290,7 +292,8 @@ buy_array =
 	["storagebig",150000],
 	["handcuffs",500],
     ["handcuffkeys",300],
-	["diaper",100]
+	["diaper",100],
+	["uwsl",10000]
 ];
 __CONST__(buy_array,buy_array);
 
