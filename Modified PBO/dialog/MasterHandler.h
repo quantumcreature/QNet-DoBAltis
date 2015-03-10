@@ -30,3 +30,5 @@
 #include "wantedadd2.hpp"
 #include "jail_time.hpp"
 #include "channel.hpp"
+#include "blackjack.hpp"
+#include "slot_machine.hpp"
