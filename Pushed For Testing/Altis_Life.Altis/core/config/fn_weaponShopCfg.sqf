@@ -231,7 +231,8 @@ switch(_shop) do
 						["optic_Holosight",nil,0],
 						["acc_pointer_IR",nil,0],
 						["acc_flashlight",nil,0],
-						["HandGrenade_Stone","Flashbang",0]
+						["HandGrenade_Stone","Flashbang",0],
+						["SmokeShellBlue","TearGas",0]
 					]
 				];
 			};
