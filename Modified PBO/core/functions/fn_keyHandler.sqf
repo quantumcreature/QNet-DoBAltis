@@ -332,6 +332,5 @@ if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKi
 			};
 		};
 	};
-};	
 
 _handled;

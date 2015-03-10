@@ -30,10 +30,6 @@ life_fnc_switchMove = {
     _object switchMove _anim;    
 };
 
-setTerrainGrid50
-waitUntil {time > 0}; enableEnvironment false;
-
- 
 [
     8*60, // seconds to delete dead bodies (0 means don't delete) 
     2*60, // seconds to delete dead vehicles (0 means don't delete)

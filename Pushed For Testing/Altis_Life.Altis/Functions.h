@@ -119,6 +119,7 @@ class Life_Client_Core
 		class useToilet {}; 
 		class sitDown {};
 		class robShops {}; //Rob Gas Station & Shops Script
+		class surrender {};
 	};
 	
 	class Housing
@@ -159,6 +160,7 @@ class Life_Client_Core
 		class vehicleWeightCfg {};
 		class houseConfig {};
 		class seizeCfg {};
+		class updateClothing {};
 		
 		//Clothing Store Configs
 		class clothing_cop {};
@@ -366,6 +368,13 @@ class Life_Client_Core
 		class chopShopMenu {};
 		class chopShopSelection {};
 		class chopShopSell {};
+		class blackjack {};
+		class BJbet {};
+		class BJhit {};
+		class BJstay {};
+		class slotmachine {};
+		class slotSpin {};
+		
 	};
 	
 	class Items

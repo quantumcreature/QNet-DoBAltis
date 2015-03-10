@@ -42,13 +42,22 @@ _unit spawn
 	
 	_maxTime = time + (life_respawn_timer * 60);
 	_RespawnBtn ctrlEnable false;
-	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
-	round(_maxTime - time) <= 0 OR isNull _this};
+	waitUntil {_Timer ctrlSetText format["Respawn Available in: %1",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
+	round(_maxTime - time) <= 0 || isNull _this || Life_request_timer};
+	waitUntil {_Timer ctrlSetText format["Respawn Available in: %1",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
+	round(_maxTime - time) <= 0 || isNull _this || Life_request_timer};
 	_RespawnBtn ctrlEnable true;
 	_Timer ctrlSetText localize "STR_Medic_Respawn_2";
 };
 
 [] spawn life_fnc_deathScreen;
+
+if(life_nlrtimer_running) then
+{
+life_nlrtimer_stop = true;
+waitUntil {!life_nlrtimer_running};
+};
+[] spawn life_fnc_newLifeRule;
 
 //Create a thread to follow with some what precision view of the corpse.
 [_unit] spawn

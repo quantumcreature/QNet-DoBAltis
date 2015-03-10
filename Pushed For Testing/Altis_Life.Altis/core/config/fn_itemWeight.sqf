@@ -58,5 +58,6 @@ switch (_item) do
 	case "storagebig": {10};
 	case "handcuffs": {1};
     case "handcuffkeys": {1};
+	case "uwsl": {5};
 	default {1};
 };

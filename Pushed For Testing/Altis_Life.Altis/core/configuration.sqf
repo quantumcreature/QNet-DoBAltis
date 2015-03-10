@@ -29,7 +29,7 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
-life_respawn_timer = 2; //Scaled in minutes
+life_respawn_timer = 1; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
@@ -38,6 +38,7 @@ life_action_gathering = false;
 life_fadeSound = false;
 //Channel 7
 life_channel_send = true;
+Life_request_timer = false;
 
 //Persistent Saving
 __CONST__(life_save_civ,FALSE); //Save weapons for civs?
@@ -126,6 +127,7 @@ __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can nev
 life_inv_items = 
 [
 	"life_inv_oilu",
+	"life_inv_uwsl",
 	"life_inv_oilp",
 	"life_inv_heroinu",
 	"life_inv_heroinp",
@@ -223,6 +225,7 @@ life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocai
 sell_array = 
 [
 	["apple",50],
+	["uwsl",5000],
 	["heroinu",1850],
 	["heroinp",2650],
 	["salema",45],
@@ -290,7 +293,8 @@ buy_array =
 	["storagebig",150000],
 	["handcuffs",500],
     ["handcuffkeys",300],
-	["diaper",100]
+	["diaper",100],
+	["uwsl",10000]
 ];
 __CONST__(buy_array,buy_array);
 
