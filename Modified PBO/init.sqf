@@ -13,6 +13,7 @@ life_versionInfo = "Altis Life RPG v3.1.4.8";
 [] execVM "KRON_Strings.sqf";
 [] execVM "addons\scripts\no_side_chat.sqf";
 [] execVM "teargas.sqf";
+[] execVM "Anticheat.sqf"; //anticheat
 
 
 StartProgress = true;
