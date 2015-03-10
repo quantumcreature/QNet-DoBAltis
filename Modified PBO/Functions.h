@@ -119,7 +119,6 @@ class Life_Client_Core
 		class useToilet {}; 
 		class sitDown {};
 		class robShops {}; //Rob Gas Station & Shops Script
-		class surrender {};
 	};
 	
 	class Housing

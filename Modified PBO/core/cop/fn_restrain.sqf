@@ -30,8 +30,11 @@ if(isNull _cop) exitWith {};
 	};
 };
 
+<<<<<<< HEAD
 		if(!(player getVariable["surrender",FALSE])) then { player setVariable["surrender",FALSE,TRUE]; };
 		
+=======
+>>>>>>> parent of c38bba4... Shift+2=Surrender
 titleText[format[localize "STR_Cop_Retrained",_cop getVariable["realname",name _cop]],"PLAIN"];
 				
 while {player getVariable "restrained"} do
