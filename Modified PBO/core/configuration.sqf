@@ -29,7 +29,7 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
-life_respawn_timer = 2; //Scaled in minutes
+life_respawn_timer = 1; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
@@ -38,6 +38,7 @@ life_action_gathering = false;
 life_fadeSound = false;
 //Channel 7
 life_channel_send = true;
+Life_request_timer = false;
 
 //Persistent Saving
 __CONST__(life_save_civ,FALSE); //Save weapons for civs?
